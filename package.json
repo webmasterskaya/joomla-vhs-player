@@ -1,0 +1,41 @@
+{
+  "name": "joomla-vhs-player",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "media:lang:videojs:en": "cpy node_modules/video.js/dist/lang/en.j* component/media/js/lang",
+    "media:lang:videojs:ru": "cpy node_modules/video.js/dist/lang/ru.j* component/media/js/lang",
+    "media:lang:videojs": "npm run media:lang:videojs:en && npm run media:lang:videojs:ru",
+    "media:lang": "npm run media:lang:videojs",
+    "media:font:videojs": "cpy node_modules/video.js/dist/font component/media/font",
+    "media:font": "npm run media:font:videojs",
+    "media:js:videojs": "cpy node_modules/video.js/dist/*.js component/media/js",
+    "media:js": "npm run media:js:videojs",
+    "media:css:videojs": "cpy node_modules/video.js/dist/*.css component/media/css",
+    "media:css": "npm run media:css:videojs",
+    "media:themes:videojs:city": "cpy node_modules/@videojs/themes/dist/city/index.css component/media/css/themes/city",
+    "media:themes:videojs:fantasy": "cpy node_modules/@videojs/themes/dist/fantasy/index.css component/media/css/themes/fantasy",
+    "media:themes:videojs:forest": "cpy node_modules/@videojs/themes/dist/forest/index.css component/media/css/themes/forest",
+    "media:themes:videojs:sea": "cpy node_modules/@videojs/themes/dist/sea/index.css component/media/css/themes/sea",
+    "media:themes:videojs": "npm run media:themes:videojs:city && npm run media:themes:videojs:fantasy && npm run media:themes:videojs:forest && npm run media:themes:videojs:sea",
+    "media:themes": "npm run media:themes:videojs",
+    "media": "npm run media:lang && npm run media:font && npm run media:js && npm run media:css && npm run media:themes"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webmasterskaya/joomla-vhs-player.git"
+  },
+  "author": "Artem Vasilev - Webmasterskaya",
+  "license": "GNU General Public License version 3 or later; see LICENSE.txt",
+  "bugs": {
+    "url": "https://github.com/webmasterskaya/joomla-vhs-player/issues"
+  },
+  "homepage": "https://github.com/webmasterskaya/joomla-vhs-player#readme",
+  "dependencies": {
+    "@videojs/themes": "^1.0.0",
+    "video.js": "^7.7.5"
+  },
+  "devDependencies": {
+    "cpy-cli": "^3.1.0"
+  }
+}

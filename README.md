@@ -1,1 +1,1 @@
-# joomla-vhs-player
+# Joomla! - Видеоплеер с поддержкой HLS

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.9" type="component" method="upgrade">
+    <name>COM_VHS_PLAYER</name>
+    <author>Artem Vasilev - Webmasterskaya</author>
+    <creationDate>03.04.2020</creationDate>
+    <copyright>Copyright (C) 2020 Webmasterskaya. All rights reserved.</copyright>
+    <license>GNU General Public License version 3 or later; see LICENSE.txt</license>
+    <authorEmail>dev@webmasterskaya.xyz</authorEmail>
+    <authorUrl>https://webmasterskaya.xyz</authorUrl>
+    <version>__DEPLOY_VERSION__</version>
+    <description>COM_VHS_PLAYER_DESCRIPTION</description>
+    <files folder="site">
+        <folder>controllers</folder>
+        <folder>helpers</folder>
+        <folder>models</folder>
+        <folder>views</folder>
+        <filename>controller.php</filename>
+        <filename>vhs_player.php</filename>
+        <filename>router.php</filename>
+    </files>
+    <languages folder="site">
+        <language tag="en-GB">language/en-GB/en-GB.com_vhs_player.ini</language>
+        <language tag="en-GB">language/en-GB/en-GB.com_vhs_player.sys.ini</language>
+        <language tag="ru-RU">language/ru-RU/ru-RU.com_vhs_player.ini</language>
+        <language tag="ru-RU">language/ru-RU/ru-RU.com_vhs_player.sys.ini</language>
+    </languages>
+    <administration>
+        <menu>COM_VHS_PLAYER</menu>
+        <submenu>
+            <menu option="com_vhs_player" view="name">COM_VHS_PLAYER_</menu>
+        </submenu>
+        <files folder="admin">
+            <folder>controllers</folder>
+            <folder>helpers</folder>
+            <folder>models</folder>
+            <folder>sql</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+            <filename>controller.php</filename>
+            <filename>vhs_player.php</filename>
+        </files>
+        <languages folder="admin">
+            <language tag="en-GB">language/en-GB/en-GB.com_vhs_player.ini</language>
+            <language tag="en-GB">language/en-GB/en-GB.com_vhs_player.sys.ini</language>
+            <language tag="ru-RU">language/ru-RU/ru-RU.com_vhs_player.ini</language>
+            <language tag="ru-RU">language/ru-RU/ru-RU.com_vhs_player.sys.ini</language>
+        </languages>
+    </administration>
+    <media destination="com_vhs_player" folder="media">
+        <folder>css</folder>
+        <folder>js</folder>
+        <folder>images</folder>
+    </media>
+    <updateservers>
+        <server type="extension" priority="1" name="joomla-vhs-player">
+            https://site.com/update?extension=com_vhs_player
+        </server>
+    </updateservers>
+</extension>

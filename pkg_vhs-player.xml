@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.9" type="package" method="upgrade">
+    <name>PKG_VHS_PLAYER</name>
+    <packagename>vhs_player</packagename>
+    <author>Artem Vasilev - Webmasterskaya</author>
+    <creationDate>03.04.2020</creationDate>
+    <copyright>Copyright (C) 2020 Webmasterskaya. All rights reserved.</copyright>
+    <license>GNU General Public License version 3 or later; see LICENSE.txt</license>
+    <authorEmail>dev@webmasterskaya.xyz</authorEmail>
+    <authorUrl>https://webmasterskaya.xyz</authorUrl>
+    <version>__DEPLOY_VERSION__</version>
+    <description>PKG_VHS_PLAYER_DESCRIPTION</description>
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.pkg_vhs_player.sys.ini</language>
+        <language tag="ru-RU">ru-RU/ru-RU.pkg_vhs_player.sys.ini</language>
+    </languages>
+    <files>
+        <folder type="component" id="com_vhs_player">component</folder>
+        <folder type="plugin" group="content" id="vhs_player">plg_content_vhs_player</folder>
+        <folder type="plugin" group="editors-xtd" id="vhs_player">plg_editors-xtd_vhs_player</folder>
+    </files>
+    <updateservers>
+        <server type="extension" priority="1" name="pkg_vhs_player">
+            https://webmasterskaya.com/update?extension=pkg_vhs_player
+        </server>
+    </updateservers>
+</extension>
